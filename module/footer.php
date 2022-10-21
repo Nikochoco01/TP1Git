@@ -1,12 +1,16 @@
 <?php 
     $prenom = 'Nikola';
     $nom = 'Chevalliot';
+
+    include_once __DIR__."/../include/config.php";
 ?>
 
 <footer>
     <section class="copyright">
         <p>Des questions, envie d'échanger sur ces jeux ? <a href="/contact.php"> <strong>rejoint moi !</strong> </a></p>
-        <?php echo "<p><h6>Copyright : " . $prenom . ' ' . $nom . "</h6></p>" ?>
+        <p>Pour me joindre rapidement : <strong> <?php echo  DEFAULT_PHONE_NUMB ?> </strong> ou par mail  <strong> <?php echo  DEFAULT_MAIL ?> </strong></p>
+        <p>Pour tous courier format papier : <strong> <?php echo  DEFAULT_ADDRESS ?> </strong> </p>
+        <h6>Copyright : <?php echo  $prenom . ' ' . $nom ?> </h6>
     </section>
 
     <section class="articleSection">

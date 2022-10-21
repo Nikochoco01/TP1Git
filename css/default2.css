@@ -6,6 +6,7 @@
     --menuColor: brown;
     --menuColorHover: burlywood;
     --textColor : black;
+    --textColorWhite : rgb(180, 180, 180);
     --sectionBackG: rgba(119, 95, 95, 0.500);
     --sectionBorder:black;
     --requireMark: rgba(160, 0, 0, 0.7);
@@ -148,6 +149,10 @@ article h2{
     width: 50%;
 }
 
+/* Text color for section copyright in footer */
+footer > section{
+    color: var(--textColorWhite);
+}
 
 /* -------------- mobile -------------- */
 
