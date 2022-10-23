@@ -37,11 +37,5 @@
 
     <?php include_once 'module/footer.php' ?>
 
-    <!-- function debugVar($var){
-        echo "<pre>";
-            var_dump($var);
-        echo "</pre>";
-    } -->
-
 </body>
 </html>

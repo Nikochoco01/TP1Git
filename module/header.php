@@ -14,19 +14,37 @@
                 </label>
             </div>
 
-            <ul class="menu">
-                <li> <a href="/index.php"> Accueil </a></li>
-                <li> <a href=""> Présentation </a></li>
-                <li> <a href="/contact.php" target="_blank"> Contact </a></li>
+            <ul class="menu" id="menu">
+                <?php modifNav('/index.php' , 'Accueil', false) ?>
+                <?php modifNav('/contact.php' , 'Contact' ,false) ?>
                 <li class="dropDownMenu"><a href="">Blog</a>
                     <ul class="subMenu">
-                        <li><a href="#article1"> Valorant </a></li>
-                        <li><a href="#article2"> League of Legends </a></li>
-                        <li><a href="#article3"> Astroneer </a></li>
-                        <li><a href="#article4"> Rocket League </a></li>
+                        <?php modifNav('../article/valorant.php' , 'Valorant' ,false) ?>
+                        <?php modifNav('#article2' , 'League of Legends' ,false) ?>
+                        <?php modifNav('#article3' , 'Astroneer' ,false) ?>
+                        <?php modifNav('#article4' , 'Rocket League' ,false) ?>
                     </ul>
                 </li>
-                <li><a href="/subscribe.php" target="_blank">Inscription</a></li>
+                <?php modifNav('/subscribe.php' , 'Inscription' , false) ?>
             </ul>
         </nav>
 </header>
+
+    <?php function modifNav($pageName , $buttonName , $openType){
+
+            if($_SERVER['SCRIPT_NAME'] == $pageName){
+                echo '<li class="actif">';
+            }
+            else{
+                echo '<li>';
+            }
+            if($openType){
+                echo '<a href="'. $pageName .'" target="_blank">'. $buttonName .'</a>
+                </li>';
+            }
+            else{
+                echo '<a href="'. $pageName .'">'. $buttonName .'</a>
+                </li>';
+            }
+        }
+    ?>

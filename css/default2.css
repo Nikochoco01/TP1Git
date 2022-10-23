@@ -65,6 +65,17 @@ article h2{
     text-decoration: underline;
 }
 
+/* style for page selected */
+
+.actif{
+    background-color: var(--menuColorHover);
+
+}
+
+.actif > a {
+    color: var(--menuColor);
+}
+
 /*Contact style */
 
 .contactForm{
