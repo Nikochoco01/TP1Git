@@ -20,9 +20,9 @@
                 <li class="dropDownMenu"><a href="">Blog</a>
                     <ul class="subMenu">
                         <?php modifNav('../article/valorant.php' , 'Valorant' ,false) ?>
-                        <?php modifNav('#article2' , 'League of Legends' ,false) ?>
-                        <?php modifNav('#article3' , 'Astroneer' ,false) ?>
-                        <?php modifNav('#article4' , 'Rocket League' ,false) ?>
+                        <?php modifNav('../article/leagueOfLegends.php' , 'League of Legends' ,false) ?>
+                        <?php modifNav('../article/astroneer.php' , 'Astroneer' ,false) ?>
+                        <?php modifNav('../article/rocketLeague.php' , 'Rocket League' ,false) ?>
                     </ul>
                 </li>
                 <?php modifNav('/subscribe.php' , 'Inscription' , false) ?>
