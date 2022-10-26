@@ -20,6 +20,7 @@
                     </ul>
                 </li>
                 <li class=" <?php echo active("/subscribe.php") ?>"> <a href="/subscribe.php"> Inscription </a> </li>
+                <li class=" <?php echo active("/login.php") ?>"> <a href="/login.php"> <?php echo verifSession() ?> </a> </li>
                 <li class=" <?php echo active("/formResult.php") ?>"> <a href="/formResult.php"> Resultat Form </a> </li>
             </ul>
         </nav>
@@ -29,6 +30,15 @@
         function active($pageName){
             if($_SERVER['SCRIPT_NAME'] == $pageName){
                 return "actif";
+            }
+        }
+
+        function verifSession(){
+            if($_SESSION['admin'] == true){
+                return 'admin';
+            }
+            else{
+                return 'Se connecter';
             }
         }
 ?>

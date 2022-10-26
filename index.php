@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1> Accueil </h1>
+        <h1> Accueil <?php echo $_SESSION['user'] ?> </h1>
         <?php include_once "module/nav.php" ?>
     </header>
     <main>
