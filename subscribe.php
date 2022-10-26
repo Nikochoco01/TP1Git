@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,12 @@
     <title>Inscription</title>
 </head>
 <body>
-    <?php include_once 'module/header.php' ?>
+    <header>
+        <h1> Inscription </h1>
+        <?php include_once "module/nav.php" ?>
+    </header>
     <main>
-        <form action="https://ressources.site/" method="post" class="subscribeForm">
+        <form action="/formResult.php" method="post" class="subscribeForm" enctype="multipart/form-data">
 
             <h2>Inscrivez-vous: </h2>
 
@@ -49,12 +52,35 @@
 
                 <div>
                     <label for="sexeWoman"> Femme</label>
-                    <input type="checkbox" name="sexe" id="sexeWoman" value="Woman">
+                    <input type="checkbox" name="sexeWoman" id="sexeWoman" value="Woman">
                 </div>
 
                 <div>
                     <label for="sexeUndef"> Non Spécifié </label>
-                    <input type="checkbox" name="sexe" id="sexeUndef" value="Undef">
+                    <input type="checkbox" name="sexeUndef" id="sexeUndef" value="Undef">
+                </div>
+            </fieldset>
+
+            <fieldset class="passionGroup">
+                <legend> Passion </legend>
+                <div>
+                    <label for="videoGame">Jeux vidéo</label>
+                    <input type="checkbox" name="videoGame" id="videoGame" value="videoGame">
+                </div>
+
+                <div>
+                    <label for="sport"> Sport</label>
+                    <input type="checkbox" name="sport" id="sport" value="sport">
+                </div>
+
+                <div>
+                    <label for="read"> Lire </label>
+                    <input type="checkbox" name="read" id="read" value="read">
+                </div>
+
+                <div>
+                    <label for="music"> La musique </label>
+                    <input type="checkbox" name="music" id="music" value="music">
                 </div>
             </fieldset>
 

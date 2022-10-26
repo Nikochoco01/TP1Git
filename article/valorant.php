@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/default.css">
-    <title>Mon site</title>
+    <title>Valorant</title>
 </head>
 <body>
-    <?php include_once '../module/header.php' ?>
+    <header>
+        <h1> Valorant </h1>
+        <?php include_once "../module/nav.php" ?>
+    </header>
     <main>
             <article id="Article1">
                 <h2> Valorant </h2>

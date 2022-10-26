@@ -7,7 +7,7 @@ let postalCode = document.getElementById('postalCode');
 
 // subscribe formular control 
 function formControl(){
-    if(postalCode.value > 5){
+    if(postalCode.value > 6){
         window.alert('code postale invalide')
     }
 }

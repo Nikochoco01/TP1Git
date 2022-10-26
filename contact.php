@@ -8,9 +8,12 @@
     <title>Contact</title>
 </head>
 <body>
-    <?php include_once 'module/header.php' ?>
+    <header>
+        <h1> Contact </h1>
+        <?php include_once "module/nav.php" ?>
+    </header>
     <main>
-        <form action="https://ressources.site/" method="post" class="contactForm" id="contactForm">
+        <form action="/formResult.php" method="post" class="contactForm" id="contactForm">
             <h2>Contactez-nous :</h2>
             <label for="subject">Sujet <em class="requiredMark">*</em></label>
             <input type="text" name="subject" id="subject" required class="subject">

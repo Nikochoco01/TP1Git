@@ -14,7 +14,7 @@
     </section>
 
     <section class="articleSection">
-        <p>Retour aux articles</p>
+        <h2>Retour aux articles</h2>
         <a href="#Article1"> Valorant</a>
         <a href="#Article2">League of Legends</a>
         <a href="#Article3">Astroneer</a>

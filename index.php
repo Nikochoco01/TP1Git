@@ -8,7 +8,10 @@
     <title>Mon site</title>
 </head>
 <body>
-    <?php include_once 'module/header.php' ?>
+    <header>
+        <h1> Accueil </h1>
+        <?php include_once "module/nav.php" ?>
+    </header>
     <main>
             <article id="Article1">
                 <h2> Valorant </h2>
