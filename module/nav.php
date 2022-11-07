@@ -9,7 +9,7 @@
             </div>
 
             <ul class="menu" id="menu">
-                <li class=" <?php echo active("/index.php") ?> "> <a href="/index.php"> Accueil </a> </li>
+                <li class=" <?php echo active("/accueil.php") ?> "> <a href="/accueil.php"> Accueil </a> </li>
                 <li class=" <?php echo active("/contact.php") ?>"> <a href="/contact.php"> Contact </a> </li>
                 <li class="dropDownMenu"><a href="">Blog</a>
                     <ul class="subMenu">
