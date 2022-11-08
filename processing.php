@@ -1,6 +1,6 @@
 <?php
 $user = "admin";
-$passWord = "admin";
+$passWord = "test";
 
 if($_POST['user'] === $user && $_POST['passWord'] === $passWord){
     session_start();
@@ -9,6 +9,4 @@ if($_POST['user'] === $user && $_POST['passWord'] === $passWord){
     $_SESSION['admin'] = true;
     header("location: /accueil.php");
 }
-
-
 ?>
