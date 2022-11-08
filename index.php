@@ -13,13 +13,13 @@
     </header>
     <main>
 
-    <form action="/processing.php" method="post">
+    <form action="/BD.php" method="post">
 
         <label for="user"> E-mail : </label>
         <input type="text" name="user" id="user">
 
         <label for="passWord"> Mot de passe</label>
-        <input type="password" name="passWord" id="password">
+        <input type="passWord" name="passWord" id="passWord">
 
         <input type="submit" value="Se connecter">
 
