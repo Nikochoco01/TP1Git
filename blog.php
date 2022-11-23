@@ -14,9 +14,9 @@
         <?php include_once "module/nav.php" ?>
     </header>
     <main>
-        <form action="/bdMessage.php" method="post" class="contactForm" id="contactForm">
-            <h2>Contactez-nous :</h2>
-            <label for="subject">Sujet <em class="requiredMark">*</em></label>
+        <form action="/bdBlog.php" method="post" class="contactForm" id="contactForm">
+            <h2>Ecrit ton article :</h2>
+            <label for="subject">Titre de l'article <em class="requiredMark">*</em></label>
             <input type="text" name="subject" id="subject" required class="subject">
 
             <label for="name">Nom<em class="requiredMark">*</em></label>
@@ -28,8 +28,14 @@
             <label for="mailAddress" id="labelEmail">@ e-mail <em class="requiredMark">*</em></label>
             <input type="email" name="mailAddress" id="mailAddress" class="mailAddress" required pattern="[A-Z.a-z0-9]+@[A-Za-z0-9]+\.[a-zA-Z]{3}">
 
+            <label for="photo">Photo de l'article</label>
+            <input type="file" name="photo" accept="image/png , image/jpeg" id="photo" class="photo">
+
+            <label for="description">Descriptif <em class="requiredMark">*</em></label>
+            <textarea name="description" id="description" cols="10" rows="2" maxlength="255" required class="description"></textarea>
+
             <label for="message">Message <em class="requiredMark">*</em></label>
-            <textarea name="message" id="message" cols="30" rows="6" required class="message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="3" required class="message"></textarea>
 
             <input type="submit" value="Envoyer" class="submitButton" id="submitButton">
 

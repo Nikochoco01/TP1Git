@@ -10,10 +10,11 @@
 <body>
     <header>
         <h1> Se connecter </h1>
+        <?php include_once "module/nav.php"?>
     </header>
     <main>
 
-    <form action="/BD.php" method="post">
+    <form action="/bdLogin.php" method="post">
 
         <label for="user"> E-mail : </label>
         <input type="text" name="user" id="user">
@@ -22,7 +23,7 @@
         <input type="passWord" name="passWord" id="passWord">
 
         <input type="submit" value="Se connecter">
-
+        <a href="/subscribe.php"> S'inscrire </a>
     </form>
 
     </main>

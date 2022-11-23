@@ -10,13 +10,14 @@
 <body>
     <header>
         <h1> Inscription </h1>
-        <?php include_once "module/nav.php" ?>
+        <?php include_once "module/nav.php"?>
     </header>
     <main>
-        <form action="/formResult.php" method="post" class="subscribeForm" enctype="multipart/form-data">
+
+        <form action="/bdSubscribe.php" method="post" class="subscribeForm" enctype="multipart/form-data">
 
             <h2>Inscrivez-vous: </h2>
-
+            
             <label for="name">Nom<em class="requiredMark">*</em></label>
             <input type="text" name="name" id="name" required class="name">
 
@@ -94,7 +95,5 @@
         </form>
     </main>
     <?php include_once 'module/footer.php' ?>
-
-    <script src="/js/sub.js"></script>
 </body>
 </html>
