@@ -13,9 +13,9 @@
             <ul class="menu" id="menu">
                 <li class=" <?php echo active("/accueil.php") ?> "> <a href="/accueil.php"> Accueil </a> </li>
                 <li class=" <?php echo active("/contact.php") ?>"> <a href="/contact.php"> Contact </a> </li>
-                <li class="dropDownMenu"><a href="">Blog</a>
+                <li class="dropDownMenu"><a href="/blog.php">Blog</a>
                     <ul class="subMenu">
-                        <li class=" <?php echo active("/blog.php") ?>"> <a href="/blog.php"> Créer un blog </a> </li>
+                        <li class=" <?php echo active("/addBlog.php") ?>"> <a href="/addBlog.php"> Créer un blog </a> </li>
                         <li class=" <?php echo active("/valorant.php") ?>"> <a href="/article/valorant.php"> Valorant </a> </li>
                         <li class=" <?php echo active("/leagueOfLegends.php") ?>"> <a href="/article/leagueOfLegends.php"> League Of Legends </a> </li>
                         <li class=" <?php echo active("/astroneer.php") ?>"> <a href="/article/astroneer.php"> Astroneer </a> </li>
